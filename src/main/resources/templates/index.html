@@ -7,6 +7,8 @@
 
 <body ng-app="springmvc-angular" ng-controller="FilmsController" ng-init="getFilms()">
 
+<h2>Lista de Películas</h2>
+
 <div class="container" ng-show="films != null">
     <div class="film-info-bottom" ng-repeat="film in films">
         <h4><span> {{film.year}} - {{film.title}} - {{film.director}} </span></h4>
